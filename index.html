@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎉 JS Event Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>🎉 Welcome to the JS Playground!</h1>
+      <p class="magic-text">
+        <span class="click-word">Click</span>, 
+        <span class="hover-word">hover</span>, 
+        <span class="type-word">type</span> — 
+        <span class="magic-word">let the magic happen!</span>
+      </p>
+    </div>
+    <button id="darkModeToggle" class="dark-mode-toggle">
+      <span class="sun-icon">☀️</span>
+      <span class="moon-icon">🌙</span>
+    </button>
+  </header>
+
+  <section class="event-section">
+    <h2>🎈 Event Handling</h2>
+    <button id="colorBtn">Click Me!</button>
+    <p id="hoverText" class="hover-text">Hover over me!</p>
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    <p id="keyOutput"></p>
+    <button id="secretBtn">Double-Click Me 😉</button>
+  </section>
+
+  <section class="interactive-section">
+    <h2>🎮 Interactive Elements</h2>
+    
+    <div class="slideshow">
+      <img id="slide" src="https://placekitten.com/400/250" alt="Slideshow Image" />
+      <button id="prev">⬅</button>
+      <button id="next">➡</button>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn" data-tab="1">Tab 1</button>
+      <button class="tab-btn" data-tab="2">Tab 2</button>
+      <button class="tab-btn" data-tab="3">Tab 3</button>
+
+      <div class="tab-content" id="tab-1">
+        <h3>🌟 Amazing Technologies</h3>
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Technology" style="width: 100%; border-radius: 8px; margin: 10px 0;">
+        <p>💻 The first computer program was written by Ada Lovelace in 1843! She worked on Charles Babbage's Analytical Engine and created what we now recognize as the first algorithm intended to be processed by a machine.</p>
+        <p>🌐 The World Wide Web was invented in 1989 by Tim Berners-Lee while working at CERN. The first website went live in 1991, and it's still online today at http://info.cern.ch!</p>
+        <p>🚀 Modern programming languages like Python, JavaScript, and Java are built on top of machine code, which computers understand directly. One line of high-level code can translate to hundreds of machine code instructions!</p>
+      </div>
+      <div class="tab-content" id="tab-2">
+        <h3>🌍 World Geography Wonders</h3>
+        <img src="https://cdn.pixabay.com/photo/2016/11/21/17/44/arches-national-park-1846759_1280.jpg" alt="Geography" style="width: 100%; border-radius: 8px; margin: 10px 0;">
+        <p>🏜️ Arches National Park in Utah, USA, contains over 2,000 natural sandstone arches! The most famous, Delicate Arch, stands 52 feet tall and is one of the most photographed landmarks in the world.</p>
+        <p>⏳ These incredible rock formations were created over 300 million years ago when an inland sea covered the area. The arches are still changing today due to erosion, with new arches forming and old ones collapsing.</p>
+        <p>🌡️ The park experiences extreme temperature variations, from below freezing in winter to over 100°F (38°C) in summer. This temperature fluctuation actually helps create the arches through a process called "frost wedging"!</p>
+      </div>
+      <div class="tab-content" id="tab-3">
+        <h3>🔬 Amazing Science Facts</h3>
+        <img src="https://cdn.pixabay.com/photo/2017/01/20/15/06/oranges-1995056_1280.jpg" alt="Science" style="width: 100%; border-radius: 8px; margin: 10px 0;">
+        <p>🍊 Oranges are actually berries! In botanical terms, they're classified as "hesperidium" - a special type of berry with a tough, leathery rind.</p>
+        <p>🔬 The orange color of oranges comes from carotenoids, particularly beta-carotene, which is converted into vitamin A in our bodies. This is why oranges are so good for our eyesight!</p>
+        <p>🌱 A single orange tree can produce up to 60,000 flowers, but only 1% of these will become oranges. Each orange contains about 10 segments, which is why we often call them "orange segments"!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>📋 Form Validation</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+      <button type="submit">Submit</button>
+      <p id="formFeedback"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>🧙‍♂️ Built with magic and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
