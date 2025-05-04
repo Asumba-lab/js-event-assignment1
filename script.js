@@ -5,7 +5,7 @@ document.getElementById("colorBtn").addEventListener("click", () => {
   document.body.style.backgroundColor = randomColor;
   
   // Add a fun message
-  const messages = ['🌈 Wow!', '🎨 Beautiful!', '✨ Amazing!', '🌟 Stunning!'];
+  const messages = [' Wow!', ' Beautiful!', '✨ Amazing!', ' Stunning!'];
   const randomMessage = messages[Math.floor(Math.random() * messages.length)];
   alert(randomMessage);
 });
